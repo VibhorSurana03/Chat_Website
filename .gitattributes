@@ -1,0 +1,11 @@
+# Chat Website - JavaScript/Node.js Project
+*.js linguist-detectable=true
+*.jsx linguist-detectable=true
+*.json linguist-documentation=false
+*.md linguist-documentation=true
+*.html linguist-detectable=true
+*.css linguist-detectable=true
+
+# Exclude dependencies from language stats
+node_modules/* linguist-vendored
+package-lock.json linguist-generated=true
