@@ -184,6 +184,4 @@ This project is open source and available under the MIT License.
 
 **⭐ Star this repository if you find it helpful!**
 
-Made with ❤️ by Vibhor Surana
-
 </div>
