@@ -10,7 +10,7 @@
 
 **A modern, feature-rich real-time chat platform with integrated gaming capabilities**
 
-[Features](#-features) • [Tech Stack](#-tech-stack) • [Installation](#-installation) • [Demo](#-demo)
+[Features](#-features) • [Tech Stack](#️-tech-stack) • [Installation](#-installation) • [Demo](#-demo)
 
 </div>
 
