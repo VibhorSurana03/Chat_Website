@@ -21,27 +21,30 @@
 ### 💬 **Real-Time Communication**
 - **Instant Messaging** - Lightning-fast message delivery using WebSocket technology
 - **Direct Messages** - Private one-on-one conversations
-- **Group Channels** - Create and manage group conversations
-- **Online Status** - See who's online in real-time
-- **Typing Indicators** - Know when someone is typing
+- **Group Channels** - Create and manage group conversations with multiple members
+- **Message Persistence** - All messages stored in MongoDB for chat history
+- **Real-Time Updates** - Instant message delivery to all connected users
 
 ### 🎮 **Integrated Gaming**
-- **Chess Game** - Play chess with your chat partners directly in the app
-- **Real-time Gameplay** - Synchronized game state across players
-- **Interactive UI** - Beautiful chessboard with drag-and-drop functionality
+- **Chess Integration** - Quick access to external chess platform (chess.gain.gg)
+- **Game Invitations** - Send chess game invites directly in chat
+- **Game Tracking** - Store game information in database
+- **Easy Access** - One-click game launch from chat interface
 
 ### 🎨 **Modern UI/UX**
 - **Responsive Design** - Works seamlessly on desktop, tablet, and mobile
-- **Dark/Light Mode** - Eye-friendly themes for any environment
-- **Emoji Support** - Express yourself with emoji picker
-- **File Sharing** - Share images and files in conversations
-- **Message History** - Persistent chat history with MongoDB
+- **Dark Theme** - Modern dark interface for comfortable viewing
+- **Emoji Picker** - Full emoji support with emoji-picker-react
+- **File Sharing** - Upload and share images and files in conversations
+- **Profile Customization** - Set profile pictures, names, and color themes
+- **Tabbed Interface** - Easy navigation between login and signup
 
 ### 🔐 **Security & Authentication**
-- **JWT Authentication** - Secure token-based authentication
-- **Password Encryption** - Bcrypt hashing for user passwords
-- **Protected Routes** - Middleware-based route protection
-- **Cookie Management** - Secure HTTP-only cookies
+- **JWT Authentication** - Secure token-based authentication with 3-day expiry
+- **Password Encryption** - Bcrypt hashing with salt for user passwords
+- **Protected Routes** - Middleware-based route protection (verifyToken)
+- **Secure Cookies** - HTTP-only cookies with SameSite=None for cross-origin
+- **Profile Setup Flow** - Guided onboarding after registration
 
 ---
 
@@ -49,23 +52,27 @@
 
 ### **Frontend**
 - **React 18.3** - Modern UI library with hooks
-- **Vite** - Lightning-fast build tool
+- **Vite** - Lightning-fast build tool and dev server
 - **TailwindCSS** - Utility-first CSS framework
-- **Shadcn/ui** - Beautiful, accessible component library
-- **Socket.io Client** - Real-time bidirectional communication
-- **Zustand** - Lightweight state management
-- **React Router** - Client-side routing
-- **Axios** - HTTP client for API calls
-- **Chess.js & React-Chessboard** - Chess game implementation
+- **Shadcn/ui** - Beautiful, accessible component library (Avatar, Dialog, Tabs, etc.)
+- **Socket.io Client 4.7** - Real-time bidirectional communication
+- **Zustand 4.5** - Lightweight state management
+- **React Router 6.26** - Client-side routing
+- **Axios 1.7** - HTTP client for API calls
+- **Emoji Picker React** - Full-featured emoji picker
+- **React Icons** - Icon library for UI elements
+- **Moment.js** - Date and time formatting
 
 ### **Backend**
-- **Node.js & Express** - Fast, minimalist web framework
-- **Socket.io** - Real-time WebSocket server
-- **MongoDB & Mongoose** - NoSQL database with ODM
-- **JWT** - JSON Web Token authentication
-- **Bcrypt** - Password hashing
-- **Multer** - File upload handling
-- **CORS** - Cross-origin resource sharing
+- **Node.js & Express 4.19** - Fast, minimalist web framework
+- **Socket.io 4.7** - Real-time WebSocket server
+- **MongoDB & Mongoose 8.5** - NoSQL database with ODM
+- **JWT (jsonwebtoken 9.0)** - JSON Web Token authentication
+- **Bcrypt 5.1** - Password hashing with salt
+- **Multer 1.4** - File upload handling
+- **CORS 2.8** - Cross-origin resource sharing
+- **Cookie Parser** - Parse and manage cookies
+- **Dotenv** - Environment variable management
 
 ---
 
@@ -95,10 +102,10 @@ cd Chat_Website
 
 3. Create a `.env` file with the following variables:
    ```env
-   PORT=5000
-   MONGODB_URI=your_mongodb_connection_string
-   JWT_SECRET=your_jwt_secret_key
+   PORT=8747
+   JWT_KEY=your_jwt_secret_key
    ORIGIN=http://localhost:5173
+   DATABASE_URL=your_mongodb_connection_string
    ```
 
 4. Start the server:
